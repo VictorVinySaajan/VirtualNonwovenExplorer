@@ -10,9 +10,9 @@ import itertools
 class MachineLearningUtils():
     def __init__(self):
         #Load the ML model and it's scaler for analysis
-        self.Best_model = pickle.load(open('../ML_Models/BestModel', 'rb'))
-        self.scaler = pickle.load(open('../ML_Models/NeuralNetworkRegressorScaler', 'rb'))
-        self.CliModel = pickle.load(open('../ML_Models/RadomForestForCli', 'rb'))
+        self.Best_model = pickle.load(open('ML_Models/BestModel', 'rb'))
+        self.scaler = pickle.load(open('ML_Models/NeuralNetworkRegressorScaler', 'rb'))
+        self.CliModel = pickle.load(open('ML_Models/RadomForestForCli', 'rb'))
 
     def getBestModel(self):
         return self.Best_model
@@ -54,7 +54,7 @@ class MachineLearningUtils():
 
 class DataPreperationUtils():
     def __init__(self):
-        self.DataFrame = pd.read_csv('../data/Database.csv')
+        self.DataFrame = pd.read_csv('data/Database.csv')
         self.MLUtils = MachineLearningUtils()
 
     def MapToLinSpace(self, dimension, lowerBound, upperBound):
