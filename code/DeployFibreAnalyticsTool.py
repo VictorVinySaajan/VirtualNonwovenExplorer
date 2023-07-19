@@ -2029,4 +2029,4 @@ def updatDerivativePlot(value1, value2, value3, value4, value5, value6, res):
     return derivPlot
 
 if __name__ == '__main__':
-	return app.run_server(debug=True)
+	app.run_server(debug=True)
