@@ -57,6 +57,7 @@ theme =  {
 }
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets, suppress_callback_exceptions=True)
+server = app.server
 
 encoded_logo = base64.b64encode(open('code/image_6.png','rb').read())
 encoded_totem = base64.b64encode(open('code/image_5.png','rb').read())
@@ -2029,4 +2030,4 @@ def updatDerivativePlot(value1, value2, value3, value4, value5, value6, res):
     return derivPlot
 
 if __name__ == '__main__':
-	app.run_server(debug=True)
+	app.run_server(debug=False)
