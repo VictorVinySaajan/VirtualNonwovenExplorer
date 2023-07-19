@@ -58,8 +58,8 @@ theme =  {
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets, suppress_callback_exceptions=True)
 
-encoded_logo = base64.b64encode(open('image_6.png','rb').read())
-encoded_totem = base64.b64encode(open('image_5.png','rb').read())
+encoded_logo = base64.b64encode(open('code/image_6.png','rb').read())
+encoded_totem = base64.b64encode(open('code/image_5.png','rb').read())
 
 # surro_img = io.imread('../images/sample_1.png')
 # image_fig = px.imshow(surro_img)
